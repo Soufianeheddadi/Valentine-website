@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine? 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating hearts background -->
+  <div id="bg"></div>
+
+  <!-- Bunny that follows the cursor -->
+  <div id="bunny">
+    <div class="bunny-wrap">
+      <!-- Ears -->
+      <div class="ears">
+        <div class="ear ear-l"><div class="ear-inner"></div></div>
+        <div class="ear ear-r"><div class="ear-inner"></div></div>
+      </div>
+
+      <!-- Head -->
+      <div class="head">
+        <!-- Angry eyebrows (hidden by default) -->
+        <div class="brow brow-l"></div>
+        <div class="brow brow-r"></div>
+        <!-- Eyes -->
+        <div class="eyes">
+          <div class="eye eye-l"></div>
+          <div class="eye eye-r"></div>
+        </div>
+        <!-- Nose -->
+        <div class="nose"></div>
+        <!-- Mouth -->
+        <div class="mouth"></div>
+        <!-- Cheeks -->
+        <div class="cheek cheek-l"></div>
+        <div class="cheek cheek-r"></div>
+      </div>
+
+      <!-- Body -->
+      <div class="body">
+        <div class="arm arm-l" id="armL"></div>
+        <div class="arm arm-r" id="armR"></div>
+        <!-- Pointing sign (hidden until angry) -->
+        <div class="sign" id="sign">YES! →</div>
+      </div>
+    </div>
+
+    <!-- Speech bubble -->
+    <div class="bubble" id="bubble">Please say yes! 🥺</div>
+  </div>
+
+  <!-- Valentine Card -->
+  <main class="card" id="card">
+    <div class="hearts-deco" aria-hidden="true">💕 💖 💕</div>
+    <h1 class="title">Will You Be My Valentine?</h1>
+    <p class="subtitle">I really hope you say yes… 🌸</p>
+    <div class="btns" id="btns">
+      <button id="yesBtn" class="btn btn-yes" onclick="handleYes()">Yes! 💖</button>
+      <button id="noBtn"  class="btn btn-no"  onclick="handleNo()">No 💔</button>
+    </div>
+  </main>
+
+  <!-- Win / Success overlay -->
+  <div id="win" class="win hidden">
+    <div class="win-box">
+      <div class="win-bunny">🐰💕🐰</div>
+      <h2>YAY! You said YES! 🎉</h2>
+      <p>You just made this little bunny the happiest ever! 💖✨</p>
+      <div id="confetti" class="confetti"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
