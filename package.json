@@ -1,0 +1,10 @@
+{
+  "name": "valentine-website",
+  "version": "1.0.0",
+  "description": "Interactive Valentine's Day website with a cursor-following bunny",
+  "scripts": {
+    "start": "npx serve . --listen 3000 --no-clipboard"
+  },
+  "keywords": ["valentine", "bunny", "interactive"],
+  "license": "MIT"
+}
